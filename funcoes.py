@@ -5,7 +5,7 @@ vLuz = 3 * 10 ** 8
 # k = 2pi/ comprimento  k-> perído.
 # 
 
-
+# retorna as variáveis com a entrada da frequência de onda
 def freqInput(freq):
     comprimento = vLuz / freq
     
@@ -14,3 +14,14 @@ def freqInput(freq):
     w = 2 * pi * freq
     
     return comprimento, k, w
+
+# retorna as variáveis com a entrada do comprimento de onda
+def compriInput(compri):
+    freq = vLuz / compri
+    
+    k = 2 * pi / compri
+    
+    w = 2 * pi * freq
+    
+    return freq, k, w
+

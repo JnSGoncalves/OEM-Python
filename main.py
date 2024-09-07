@@ -14,7 +14,7 @@ print("1.23 x 10^4 --> 1.23e4\n")
 
 while True:
     print("""1. Entrada de Frequência de Onda
-2. 
+2. Entrada de comprimento de onda
 3.
 4.
 5.
@@ -37,7 +37,19 @@ while True:
         print("Comprimento de onda = %sm", comprimentoNotacao)
         print("K = %s rad/m", kNotacao)
         print("W = %s rad/s", wNotacao) 
+
+    elif(opcao == '2'):
+        comprimento = float(input("Digite o comprimento de onda (m): "))
         
+        freq, k, w = compriInput(comprimento)
+        
+        freqNotacao = "{:.4e}".format(freq)
+        kNotacao = "{:.4e}".format(k)
+        wNotacao = "{:.4e}".format(w)
+        
+        print("Frequência de onda = %s Hz", freqNotacao)
+        print("K = %s rad/m", kNotacao)
+        print("W = %s rad/s", wNotacao)
         
     elif(opcao == '0'):
         print("Saindo...")
