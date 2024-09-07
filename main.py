@@ -66,7 +66,18 @@ while True:
         print(f"W (Frequência angula da onda) = {wNotacao} rad/s")
         print()
 
-    
+    elif(opcao == "4"):
+        w = float(input("Digite o valor de W (rad/s): "))
+        comprimento, f, k = freqAngInput(w)
+
+        comprimentoNotacao = "{:.4e}".format(comprimento)
+        fNotacao = "{:.4e}".format(f)
+        kNotacao = "{:.4e}".format(k)
+
+        print(f"λ (Comprimento de onda) = {comprimentoNotacao} m")
+        print(f"K (Número de onda) = {kNotacao} rad/m")
+        print(f"F (Frequência) = {fNotacao} Hz")
+        print()
         
     elif(opcao == '0'):
         print("Saindo...")

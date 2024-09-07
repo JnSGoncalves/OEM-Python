@@ -32,3 +32,9 @@ def nOndaInput(k):
 
     return comprimento, f, w
 
+def freqAngInput(w):
+    f = w/(2*pi)
+    comprimento = vLuz / f
+    k = 2 * pi / comprimento
+
+    return comprimento, f, k
