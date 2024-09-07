@@ -15,9 +15,9 @@ print("1.23 x 10^4 --> 1.23e4\n")
 while True:
     print("""1. Entrada de Frequência de Onda
 2. Entrada de Comprimento de onda
-3.
-4.
-5.
+3. Entrada de Número de onda
+4. Entrada de Frequência angular
+5. Entrada da Amplitude Magnética
 6.
 0. Sair\n""")
     
@@ -37,6 +37,7 @@ while True:
         print(f"Comprimento de onda = {comprimentoNotacao}m" )
         print(f"K = {kNotacao} rad/m")
         print(f"W = {wNotacao} rad/s" ) 
+        print()
         
     if(opcao == '2'):
         comprimento = float(input("Digite o comprimento de onda (m): "))
@@ -50,6 +51,19 @@ while True:
         print(f"Frequência = {fNotacao} Hz")
         print(f"K = {kNotacao} rad/m" )
         print(f"W = {wNotacao} rad/s")    
+        print()
+    
+    elif(opcao == '5'):
+        bm = float(input("Digite a amplitude do campo magnético (T): "))
+        
+        em, i = bmInput(bm)
+    
+        emNotacao = "{:.4e}".format(em)
+        iNotacao = "{:.4e}".format(i)
+        
+        print(f"Em - Campo Elétrico = {emNotacao} V/m")
+        print(f"Intensidade da Onda {iNotacao} W/m^2")
+        print()
         
     elif(opcao == '0'):
         print("Saindo...")

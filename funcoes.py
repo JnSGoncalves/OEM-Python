@@ -2,6 +2,7 @@ from math import pi, sin, cos
 vLuz = 3 * 10 ** 8
 h = 4.135667696e-15  # Constante de Planck em eV·s
 e = 1.602176634e-19  # Carga do elétron 
+u = 4 * pi * 10 ** -7 # Constante Magnética em H/m
 
 # f = 1\ t              t-> período.
 # k = 2pi/ comprimento  k-> perído.
@@ -23,3 +24,9 @@ def comprimentoInput(comprimento):
     w = 2 * pi * f
 
     return f, k, w
+
+def bmInput(bm):
+    em = vLuz * bm
+    intensidade = vLuz / (2 * u) * (bm ** 2)
+    
+    return em, intensidade
