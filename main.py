@@ -18,7 +18,8 @@ while True:
 3. Entrada de Número de onda
 4. Entrada de Frequência angular
 5.
-6.
+6. Entrada de Amplitude do campo elétrico (Em)
+7. Entrada de Intensidade de uma onda eletromagnética (I)
 0. Sair\n""")
     
     
@@ -78,6 +79,20 @@ while True:
         print(f"K (Número de onda) = {kNotacao} rad/m")
         print(f"F (Frequência) = {fNotacao} Hz")
         print()
+
+    elif(opcao == '6'):
+        em = float(input("Digite a amplitude do campo elétrico(Bm) (T): "))
+
+        bm, intensidade = emInput(em)
+
+        bmNotacao = "{:.4e}".format(bm)
+        intensidadeNotacao = "{:.4e}".format(intensidade)
+
+        print(f"Bm (Amplitude do campo magnético) = {bmNotacao} T")
+        print(f"I (Intensidade da onda) = {intensidadeNotacao} w/m²")
+        print() 
+
+    
         
     elif(opcao == '0'):
         print("Saindo...")
