@@ -34,7 +34,8 @@ while True:
         comprimentoNotacao = "{:.4e}".format(comprimento)
         kNotacao = "{:.4e}".format(k)
         wNotacao = "{:.4e}".format(w)
-        
+
+        print()
         print(f"λ (Comprimento de onda) = {comprimentoNotacao} m" )
         print(f"K (Número de onda) = {kNotacao} rad/m")
         print(f"W (Frequência angular da onda) = {wNotacao} rad/s" ) 
@@ -49,6 +50,7 @@ while True:
         kNotacao = "{:.4e}".format(k)
         wNotacao = "{:.4e}".format(w)
 
+        print()
         print(f"F (Frequência) = {fNotacao} Hz")
         print(f"K (Número de onda) = {kNotacao} rad/m" )
         print(f"W (Frequência angular da onda) = {wNotacao} rad/s")    
@@ -62,6 +64,7 @@ while True:
         fNotacao = "{:.4e}".format(f)
         wNotacao = "{:.4e}".format(w)
 
+        print()
         print(f"λ (Comprimento de onda) = {comprimentoNotacao} m")
         print(f"F (Frequência) = {fNotacao} Hz")
         print(f"W (Frequência angula da onda) = {wNotacao} rad/s")
@@ -75,6 +78,7 @@ while True:
         fNotacao = "{:.4e}".format(f)
         kNotacao = "{:.4e}".format(k)
 
+        print()
         print(f"λ (Comprimento de onda) = {comprimentoNotacao} m")
         print(f"K (Número de onda) = {kNotacao} rad/m")
         print(f"F (Frequência) = {fNotacao} Hz")
@@ -88,9 +92,23 @@ while True:
         bmNotacao = "{:.4e}".format(bm)
         intensidadeNotacao = "{:.4e}".format(intensidade)
 
+        print()
         print(f"Bm (Amplitude do campo magnético) = {bmNotacao} T")
         print(f"I (Intensidade da onda) = {intensidadeNotacao} w/m²")
         print() 
+
+    elif(opcao == '7'):
+        intensidade = float(input("Digite a intensidade da onda eletromagnética (I) (w/m²): "))
+
+        bm, em = intensidadeInput(intensidade)
+
+        bmNotacao = "{:.4e}".format(bm)
+        emNotacao = "{:.4e}".format(em)
+
+        print()
+        print(f"Bm (Amplitude do campo magnético) = {bmNotacao} T")
+        print(f"Em (Amplitude do campo elétrico) = {emNotacao} V/m")
+        print()
 
     
         
