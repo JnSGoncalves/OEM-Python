@@ -23,3 +23,18 @@ def comprimentoInput(comprimento):
     w = 2 * pi * f
 
     return f, k, w
+
+def nOndaInput(k):
+
+    comprimento = (2*pi)/k
+    f = vLuz / comprimento
+    w = 2*pi * f
+
+    return comprimento, f, w
+
+def freqAngInput(w):
+    f = w/(2*pi)
+    comprimento = vLuz / f
+    k = 2 * pi / comprimento
+
+    return comprimento, f, k
