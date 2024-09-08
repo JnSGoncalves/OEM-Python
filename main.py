@@ -19,6 +19,7 @@ while True:
 4. Entrada de Frequência angular
 5.
 6. Entrada de Amplitude do campo elétrico (Em)
+7. Entrada de Intensidade de uma onda eletromagnética (I)
 0. Sair\n""")
     
     
@@ -87,9 +88,11 @@ while True:
         bmNotacao = "{:.4e}".format(bm)
         intensidadeNotacao = "{:.4e}".format(intensidade)
 
-        print(f"Bm (Amplitude do campo elétrico) = {bmNotacao} T")
-        print(f"I (Intensidade do campo elétrico) = {intensidadeNotacao} w/m²")
+        print(f"Bm (Amplitude do campo magnético) = {bmNotacao} T")
+        print(f"I (Intensidade da onda) = {intensidadeNotacao} w/m²")
         print() 
+
+    
         
     elif(opcao == '0'):
         print("Saindo...")
