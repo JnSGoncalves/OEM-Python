@@ -49,3 +49,9 @@ def intensidadeInput(intensidade):
     em = vLuz * bm
 
     return bm, em
+  
+def bmInput(bm):
+    em = vLuz * bm
+    intensidade = vLuz / (2 * u) * (bm ** 2)
+    
+    return em, intensidade
