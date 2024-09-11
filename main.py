@@ -99,7 +99,7 @@ while True:
         print()
 
     elif(opcao == '6'):
-        em = float(input("Digite a amplitude do campo elétrico (Em) (T): "))
+        em = float(input("Digite a amplitude do campo elétrico (Em) (V): "))
 
         bm, intensidade = emInput(em)
 
