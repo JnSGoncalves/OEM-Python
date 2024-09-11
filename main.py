@@ -20,7 +20,6 @@ while True:
 5. Entrada da Amplitude do campo Magnético (Bm)
 6. Entrada de Amplitude do campo Elétrico (Em)
 7. Entrada de Intensidade de uma onda Eletromagnética (I)
-8. Exibir tabela de possíveis conversões
 0. Sair\n""")
     
     
