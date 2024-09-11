@@ -69,8 +69,8 @@ elétrico e magnético. Um exemplo comum são as ondas de rádio, luz visível, 
 os cálculos dos resultados de saída a partir de algum dos parametros selecionados pelo usuário. 
 
 
-Estudo das ondas eletromagnéticas com programação em linguagem Python. Código em python feito para realizar diferentes tipos de cálculos, 
-relacionados a ondas eletromagnéticas Todos os cálculos são acessados através do menu do algoritmo. Passando parâmetros específicos, são 
+Estudo das ondas eletromagnéticas com programação em linguagem Python, feito para realizar diferentes tipos de cálculos, 
+relacionados a ondas eletromagnéticas. Todos os cálculos são acessados através do menu do algoritmo, passando parâmetros específicos onde são 
 exibidos resultados relacionados a ele:
 
   - Entrada com Frequência de onda: Comprimento de onda, número de onda e frequência angular da onda.
