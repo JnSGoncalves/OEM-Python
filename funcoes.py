@@ -55,9 +55,5 @@ def bmInput(bm):
     intensidade = vLuz / (2 * u) * (bm ** 2)
     
     return em, intensidade
-
-
-def exibirTabela():
-    print(f"")
     
     
