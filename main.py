@@ -5,10 +5,6 @@ e = 1.602176634e-19  # Carga do elétron
 u = 4 * pi * 10 ** -7 # Constante Magnética em H/m
 
 
-# f = 1\ t              t-> período.
-# k = 2pi/ comprimento  k-> perído.
-# 
-
 
 def freqInput(freq):
     comprimento = vLuz / freq
