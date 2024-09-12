@@ -95,11 +95,11 @@ while True:
         
         print()
         print(f"Em - Amplitude do Campo Elétrico = {emNotacao} V/m")
-        print(f"Intensidade da Onda {iNotacao} W/m^2")
+        print(f"Intensidade da Onda {iNotacao} W/m²")
         print()
 
     elif(opcao == '6'):
-        em = float(input("Digite a amplitude do campo elétrico (Em) (V): "))
+        em = float(input("Digite a amplitude do campo elétrico (Em) (V/m): "))
 
         bm, intensidade = emInput(em)
 
@@ -125,8 +125,8 @@ while True:
         print()
 
     elif(opcao == '8'):
+        tabelaConversoes()
         
-        print()
         
     elif(opcao == '0'):
         print("Saindo...")

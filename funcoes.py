@@ -57,7 +57,15 @@ def bmInput(bm):
     return em, intensidade
 
 
-def exibirTabela():
-    print(f"")
-    
-    
+def tabelaConversoes():
+    print("de rad/s -> rad/m = W(frequência angular)/Vluz = W/3x10^8")
+    print()
+    print("nm -> m  = nm * E-9")
+    print("m -> nm = m * E+9")
+    print()
+    print("mc -> m  = mc * E-6")
+    print("m -> mc = m * E+6")   
+    print()
+    print("Hz -> mHz = Hz * E-6")
+    print("mHz -> Hz = mHz * E+6")
+    print()
