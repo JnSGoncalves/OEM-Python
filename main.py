@@ -21,6 +21,7 @@ while True:
 6. Entrada de Amplitude do campo Elétrico (Em)
 7. Entrada de Intensidade de uma onda Eletromagnética (I)
 8. Exibir tabela de possíveis conversões
+9. Exibir o que possíveis dados do enunciado pode ser
 0. Sair\n""")
     
     
@@ -126,6 +127,11 @@ while True:
 
     elif(opcao == '8'):
         tabelaConversoes()
+        print()
+
+    elif(opcao == '9'):
+        dadosEnunciado()
+        print()
         
         
     elif(opcao == '0'):

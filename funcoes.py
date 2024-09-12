@@ -69,3 +69,9 @@ def tabelaConversoes():
     print("Hz -> mHz = Hz * E-6")
     print("mHz -> Hz = mHz * E+6")
     print()
+
+def dadosEnunciado():
+    print("Módulo máximo = amplitude do campo")
+    print()
+    print("Paralelo ao eixo: Sentido positivo")
+    print("Anti paralelo ao eixo: Sentido negativo")
