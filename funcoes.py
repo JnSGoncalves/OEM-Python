@@ -73,6 +73,8 @@ def tabelaConversoes():
     print("mHz -> Hz = mHz * E+6")
     print("Hz -> THz = Hz * E-12")
     print("THz -> Hz = THz * E+12")
+    print("Hz -> GHz = Hz * E-9")
+    print("GHz - > Hz = Hz * E+9")
     print()
     print("V/m -> MV/m = V/m * E-6")
     print("MV/m -> V/m = MV/m * E+6")
@@ -91,5 +93,9 @@ def dadosEnunciado():
     print()
     print("E = (Amplitude V/m) * cos((N de onda(k) rad/m) * x -(sentido +) (fre angular(w) rad/s)t)")
     print("B = (Amplitude T) * cos((N de onda(k) rad/m) * x +(sentido -) (fre angular(w) rad/s)t)")
+    print()
+    print("i x j = k  |  -i x -j = k")
+    print("-i x j = -k  |  i x -j = -k")
+    print("X(i), Y(j), Z(k)")
     print()
     
