@@ -13,13 +13,15 @@ print("Caso deseje entrar com valores em notação científica, utilize o format
 print("1.23 x 10^4 --> 1.23e4\n")
 
 while True:
-    print("""1. Entrada de Frequência de Onda
-2. Entrada de Comprimento de onda
-3. Entrada de Número de onda
-4. Entrada de Frequência angular
-5. Entrada da Amplitude Magnética (Bm)
-6. Entrada de Amplitude do campo elétrico (Em)
-7. Entrada de Intensidade de uma onda eletromagnética (I)
+    print("""1. Entrada de Frequência de Onda (F)
+2. Entrada de Comprimento de onda (λ)
+3. Entrada de Número de onda (k)
+4. Entrada de Frequência angular (w)
+5. Entrada da Amplitude do campo Magnético (Bm)
+6. Entrada de Amplitude do campo Elétrico (Em)
+7. Entrada de Intensidade de uma onda Eletromagnética (I)
+8. Exibir tabela de possíveis conversões
+9. Exibir o que possíveis dados do enunciado pode ser
 0. Sair\n""")
     
     
@@ -85,7 +87,7 @@ while True:
         print()
         
     elif(opcao == '5'):
-        bm = float(input("Digite a amplitude do campo magnético (T): "))
+        bm = float(input("Digite a amplitude do campo magnético (Bm) (T): "))
         
         em, i = bmInput(bm)
     
@@ -94,11 +96,11 @@ while True:
         
         print()
         print(f"Em - Amplitude do Campo Elétrico = {emNotacao} V/m")
-        print(f"Intensidade da Onda {iNotacao} W/m^2")
+        print(f"Intensidade da Onda {iNotacao} W/m²")
         print()
 
     elif(opcao == '6'):
-        em = float(input("Digite a amplitude do campo elétrico(Bm) (T): "))
+        em = float(input("Digite a amplitude do campo elétrico (Em) (V/m): "))
 
         bm, intensidade = emInput(em)
 
@@ -123,9 +125,21 @@ while True:
         print(f"Em (Amplitude do campo elétrico) = {emNotacao} V/m")
         print()
 
+    elif(opcao == '8'):
+        tabelaConversoes()
+        print()
+
+    elif(opcao == '9'):
+        dadosEnunciado()
+        print()
+        
         
     elif(opcao == '0'):
         print("Saindo...")
         break
+    
+    else:
+        print("Opção inválida.")
+        print()
     
     

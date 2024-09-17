@@ -55,3 +55,41 @@ def bmInput(bm):
     intensidade = vLuz / (2 * u) * (bm ** 2)
     
     return em, intensidade
+
+
+def tabelaConversoes():
+    print("de rad/s -> rad/m = W(frequência angular)/Vluz = W/3x10^8")
+    print()
+    print("nm -> m  = nm * E-9")
+    print("m -> nm = m * E+9")
+    print("um -> m = um * E-6")
+    print("m -> um = m * E+6")
+    print("mc -> m  = mc * E-6")
+    print("m -> mc = m * E+6") 
+    print()
+    print("Hz -> KHz = Hz *e-3")
+    print("Khz -> Hz = Khz*e+3")
+    print("Hz -> mHz = Hz * E-6")
+    print("mHz -> Hz = mHz * E+6")
+    print("Hz -> THz = Hz * E-12")
+    print("THz -> Hz = THz * E+12")
+    print()
+    print("V/m -> MV/m = V/m * E-6")
+    print("MV/m -> V/m = MV/m * E+6")
+    print()
+    print("mT -> T = mT * E-3")
+    print("T -> mT = T * E+3")
+    print("uT -> T = uT * E-6")
+    print("T -> uT = T * E+6")
+
+def dadosEnunciado():
+    print("Módulo máximo = amplitude do campo")
+    print("Campo elétrico ou magnético máximo -> amplitude do campo")
+    print()
+    print("Paralelo ao eixo: Sentido positivo")
+    print("Anti paralelo ao eixo: Sentido negativo")
+    print()
+    print("E = (Amplitude V/m) * cos((N de onda(k) rad/m) * x -(sentido +) (fre angular(w) rad/s)t)")
+    print("B = (Amplitude T) * cos((N de onda(k) rad/m) * x +(sentido -) (fre angular(w) rad/s)t)")
+    print()
+    
