@@ -67,6 +67,8 @@ def tabelaConversoes():
     print("mc -> m  = mc * E-6")
     print("m -> mc = m * E+6") 
     print()
+    print("Hz -> KHz = Hz *e-3")
+    print("Khz -> Hz = Khz*e+3")
     print("Hz -> mHz = Hz * E-6")
     print("mHz -> Hz = mHz * E+6")
     print("Hz -> THz = Hz * E-12")
